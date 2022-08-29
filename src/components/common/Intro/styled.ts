@@ -18,7 +18,10 @@ export const TitleContainer = styled.div`
   position: absolute;
   z-index: 3;
   @media screen and (max-width: 400px) {
-    top: 20.5vh;
+    top: 19vh;
+  }
+  @media screen and (max-width: 36rem) {
+    top: 17vh;
   }
   top: 42%;
   z-index: 3;
