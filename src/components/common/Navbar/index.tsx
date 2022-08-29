@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import * as S from "./styled";
 
 export const Navbar: React.FC = () => {
-  const [working, setWorking] = useState(true);
+  const [working, setWorking] = useState(false);
   const [working2, setWorking2] = useState(true);
   const select = () => {
     setWorking(false);
@@ -25,7 +25,6 @@ export const Navbar: React.FC = () => {
                 borderBottom: !working
                   ? "0.5rem solid rgba(49, 70, 237)"
                   : "none",
-                paddingBottom: "1.5rem",
                 color: !working ? "rgba(156, 158, 225)" : "black",
               }}
               to="/"
@@ -38,7 +37,6 @@ export const Navbar: React.FC = () => {
                 borderBottom: !working2
                   ? "0.5rem solid rgba(49, 70, 237)"
                   : "none",
-                paddingBottom: "1.5rem",
                 color: !working2 ? "rgba(156, 158, 225)" : "black",
               }}
               to="/"

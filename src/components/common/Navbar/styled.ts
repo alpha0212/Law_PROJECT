@@ -21,7 +21,7 @@ export const NavbarContainer = styled.div`
 export const Logo = styled(Link)`
   font-family: Pretendard;
   font-weight: 500;
-  font-size: 2.3rem;
+  font-size: 2.3vh;
   padding-bottom: 2.5vh;
   transform: translate(-57%, 0);
   padding-left: 32.5%;
@@ -42,9 +42,10 @@ export const NavbarList = styled.div`
 export const NavbarSelect = styled(Link)`
   text-decoration: none;
   color: black;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 4vh;
+  margin-right: 4vh;
   transition: all 0.3s;
+  padding-bottom: 1.5vh;
   &:hover {
     color: rgba(156, 158, 225);
     transition: all 0.3s;
