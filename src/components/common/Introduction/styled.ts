@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const firstContainer = styled.div`
   width: 100%;
   margin-top: 10rem;
-
+  margin-bottom: 10rem;
   text-align: center;
 `;
 

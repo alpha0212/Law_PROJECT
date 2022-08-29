@@ -16,6 +16,7 @@ export const back = styled.img`
 export const TitleContainer = styled.div`
   width: 40vw;
   position: absolute;
+  z-index: 3;
   @media screen and (max-width: 400px) {
     top: 20.5vh;
   }
