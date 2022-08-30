@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Intro, Introduction, Box } from "src/components";
+import { Navbar, Intro, Introduction } from "src/components";
 
 export const MainPage: React.FC = () => {
   return (
@@ -7,7 +7,6 @@ export const MainPage: React.FC = () => {
       <Navbar />
       <Intro />
       <Introduction />
-      <Box />
     </>
   );
 };

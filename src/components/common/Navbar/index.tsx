@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
                 borderBottom: !working
                   ? "0.5rem solid rgba(49, 70, 237)"
                   : "none",
-                color: !working ? "rgba(156, 158, 225)" : "black",
+                color: !working ? "#2827A6" : "black",
               }}
               to="/"
             >
@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
                 borderBottom: !working2
                   ? "0.5rem solid rgba(49, 70, 237)"
                   : "none",
-                color: !working2 ? "rgba(156, 158, 225)" : "black",
+                color: !working2 ? "#2827A6" : "black",
               }}
               to="/"
             >

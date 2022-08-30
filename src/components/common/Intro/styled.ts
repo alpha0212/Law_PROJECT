@@ -35,10 +35,19 @@ export const MainTitle = styled.div`
   font-size: 2.5vw;
 `;
 
-export const subTitle = styled.div`
+export const SubTitle = styled.div`
   font-family: Pretendard;
   font-weight: 500;
   font-size: 1.5vw;
-  margin-top: 1.5vh;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
   color: rgba(255, 255, 255, 0.75);
+`;
+
+export const SubText = styled.div`
+  font-family: Pretendard;
+  font-weight: 500;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5vw;
 `;

@@ -1,7 +1,7 @@
 import { useRef, useEffect, useCallback } from "react";
 
 export const useScrollFadeIn = (direction = "up", duration = 1, delay = 0) => {
-  const element = useRef();
+  const element = useRef(null);
 
   const handleDirection = (name) => {
     switch (name) {

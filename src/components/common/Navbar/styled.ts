@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
 
   z-index: 80;
-  padding-top: 3.5vh;
+  padding-top: 2.5vh;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -20,13 +21,13 @@ export const NavbarContainer = styled.div`
 
 export const Logo = styled(Link)`
   font-family: Pretendard;
-  font-weight: 500;
-  font-size: 3.3vh;
-  padding-bottom: 3.5vh;
+  font-weight: 600;
+  font-size: 2.5vh;
+  padding-bottom: 2.5vh;
   transform: translate(-57%, 0);
   padding-left: 32.5%;
   text-decoration: none;
-  color: black;
+  color: #2827a6;
 `;
 
 export const LinkContainer = styled.div`
@@ -44,9 +45,10 @@ export const NavbarSelect = styled(Link)`
   color: black;
   margin-left: 4vh;
   margin-right: 4vh;
-  font-size: 2.2vh;
+  font-size: 1.4rem;
+  font-weight: 500;
   transition: all 0.3s;
-  padding-bottom: 2vh;
+  padding-bottom: 2.6vh;
   &:hover {
     color: rgba(156, 158, 225);
     transition: all 0.3s;
