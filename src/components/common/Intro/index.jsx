@@ -9,7 +9,7 @@ export const Intro = () => {
     1: useScrollFadeIn("up", 1, 0.7),
   };
   return (
-    <S.Background>
+    <>
       <S.back src={back} alt="Background Image" />
       <S.TitleContainer>
         <S.MainTitle {...animatedItem[0]}>
@@ -17,6 +17,6 @@ export const Intro = () => {
         </S.MainTitle>
         <S.subTitle {...animatedItem[1]}>이로운 세상을 만드는 습관</S.subTitle>
       </S.TitleContainer>
-    </S.Background>
+    </>
   );
 };

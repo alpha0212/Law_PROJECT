@@ -18,12 +18,12 @@ export const TitleContainer = styled.div`
   position: absolute;
   z-index: 3;
   @media screen and (max-width: 400px) {
-    top: 19vh;
+    top: 21vh;
   }
   @media screen and (max-width: 36rem) {
-    top: 17vh;
+    top: 35vw;
   }
-  top: 42%;
+  top: 28vw;
   z-index: 3;
   padding-left: 13%;
 `;
