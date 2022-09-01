@@ -15,7 +15,6 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   font-family: Pretendard;
-  border-bottom: 0.1rem solid #c6c6c6;
   background-color: #fff;
 `;
 
@@ -27,7 +26,6 @@ export const Logo = styled(Link)`
   transform: translate(-57%, 0);
   padding-left: 32.5%;
   text-decoration: none;
-  color: #2827a6;
 `;
 
 export const LinkContainer = styled.div`

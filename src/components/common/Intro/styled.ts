@@ -9,13 +9,11 @@ export const Background = styled.div`
 export const back = styled.img`
   width: 100%;
   height: 100%;
-  margin-top: 3vh;
 `;
 
 export const TitleContainer = styled.div`
   width: 40vw;
   position: absolute;
-  z-index: 3;
   @media screen and (max-width: 400px) {
     top: 21vh;
   }
@@ -49,4 +47,16 @@ export const SubText = styled.div`
   font-size: 1vw;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5vw;
+`;
+
+export const ScrollContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+  top: 30rem;
+`;
+
+export const ScrollHelp = styled.div`
+  display: inline-block;
 `;

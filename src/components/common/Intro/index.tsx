@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import * as S from "./styled";
 import back from "src/assets/background.jpg";
 import { useScrollFadeIn } from "src/hooks/useScrollFadeIn";
 
 export const Intro = () => {
+  const [hidden, setHidden] = useState({ status: false });
+  const listenScrollEvent = () => {
+    window.scrollY > 10
+      ? setHidden({ status: true })
+      : setHidden({ status: false });
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
   const animatedItem = {
     0: useScrollFadeIn("up", 1, 0.2),
     1: useScrollFadeIn("up", 1, 0.7),
@@ -26,6 +38,13 @@ export const Intro = () => {
           <br /> 사이버 범죄입니다.
         </S.SubText>
       </S.TitleContainer>
+      {!hidden.status ? (
+        <S.ScrollContainer>
+          <S.ScrollHelp>👇</S.ScrollHelp>
+        </S.ScrollContainer>
+      ) : (
+        <div></div>
+      )}
     </>
   );
 };
