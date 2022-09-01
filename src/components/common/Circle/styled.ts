@@ -1,21 +1,18 @@
 import styled from "@emotion/styled";
 
-export const TitleCircle = styled.div`
-  width: 20rem;
-  height: 7rem;
-  background-color: #919fe6;
-  border-radius: 41px;
+export const CircleContaner = styled.div`
+  width: 100%;
+  padding-top: 6.5rem;
   text-align: center;
 `;
 
-export const TitleText = styled.div`
-  font-weight: bold;
-  letter-spacing: 0.105rem;
-  font-size: 2.5rem;
-  padding-top: 2.3rem;
-  color: #ffffff;
-`;
-
-export const CircleContainer = styled.div`
-  padding-left: 45%;
+export const CircleText = styled.div`
+  width: 19rem;
+  height: 19rem;
+  background-color: #ffffff;
+  border-radius: 20rem;
+  box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-right: 5rem;
+  margin-left: 5rem;
 `;

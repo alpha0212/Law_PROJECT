@@ -10,7 +10,6 @@ export const back = styled.img`
   width: 100%;
   height: 100%;
   margin-top: 3vh;
-  object-fit: cover;
 `;
 
 export const TitleContainer = styled.div`

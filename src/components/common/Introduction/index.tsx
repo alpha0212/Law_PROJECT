@@ -2,13 +2,13 @@ import React from "react";
 
 import * as S from "./styled";
 import { useScrollFadeIn } from "src/hooks/useScrollFadeIn";
-import { Circle } from "src/components";
+import { HalfCircle } from "src/components";
 
 export const Introduction: React.FC = () => {
   const animatedItem = {
     0: useScrollFadeIn("up", 1, 0.2),
-    1: useScrollFadeIn("up", 1, 1),
-    2: useScrollFadeIn("up", 1, 1),
+    1: useScrollFadeIn("up", 1, 0.7),
+    2: useScrollFadeIn("up", 1, 0.7),
   };
   return (
     <>
@@ -35,7 +35,7 @@ export const Introduction: React.FC = () => {
           </S.Three>
         </S.firstContainer>
         <S.SecondContainer>
-          <Circle />
+          <HalfCircle />
         </S.SecondContainer>
       </S.IntroductionContainer>
     </>

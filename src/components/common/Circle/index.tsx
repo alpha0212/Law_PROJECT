@@ -3,10 +3,10 @@ import * as S from "./styled";
 
 export const Circle: React.FC = () => {
   return (
-    <S.CircleContainer>
-      <S.TitleCircle>
-        <S.TitleText>악플?</S.TitleText>
-      </S.TitleCircle>
-    </S.CircleContainer>
+    <S.CircleContaner>
+      <S.CircleText></S.CircleText>
+      <S.CircleText></S.CircleText>
+      <S.CircleText></S.CircleText>
+    </S.CircleContaner>
   );
 };
