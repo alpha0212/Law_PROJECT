@@ -4,7 +4,7 @@ export const TitleCircle = styled.div`
   width: 22rem;
   height: 7rem;
   background-color: #919fe6;
-  border-radius: 41px;
+  border-radius: 3.5rem;
   text-align: center;
   display: inline-block;
 `;
