@@ -37,6 +37,7 @@ export const Introduction: React.FC = () => {
         <S.SecondContainer>
           <HalfCircle />
         </S.SecondContainer>
+        <S.ThreeContainer></S.ThreeContainer>
       </S.IntroductionContainer>
     </>
   );

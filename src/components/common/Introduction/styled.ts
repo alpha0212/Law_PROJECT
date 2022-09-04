@@ -37,3 +37,9 @@ export const SecondContainer = styled.div`
   margin-top: 30rem;
   text-align: center;
 `;
+
+export const ThreeContainer = styled.div`
+  width: 100%;
+  padding-top: 100rem;
+  margin-top: 110rem;
+`;
