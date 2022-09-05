@@ -34,12 +34,15 @@ export const Three = styled.div`
 
 export const SecondContainer = styled.div`
   width: 100%;
-  margin-top: 30rem;
+  margin-top: 20rem;
   text-align: center;
 `;
 
 export const ThreeContainer = styled.div`
   width: 100%;
-  padding-top: 100rem;
-  margin-top: 110rem;
+  padding-top: 83rem;
+`;
+
+export const FourContainer = styled.div`
+  margin-top: 25rem;
 `;

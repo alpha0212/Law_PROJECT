@@ -4,3 +4,6 @@ export * from "./Introduction";
 export * from "./HalfCircle";
 export * from "./CircleUnderContent";
 export * from "./Circle";
+export * from "./different";
+export * from "./Footer";
+export * from "./Content";

@@ -68,7 +68,7 @@ export const Navbar: React.FC = () => {
                   : "none",
                 color: !working2 ? "#2827A6" : contentColor,
               }}
-              to="/"
+              to="/content"
             >
               CONTENT
             </S.NavbarSelect>

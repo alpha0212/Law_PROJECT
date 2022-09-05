@@ -2,7 +2,7 @@ import React from "react";
 
 import * as S from "./styled";
 import { useScrollFadeIn } from "src/hooks/useScrollFadeIn";
-import { HalfCircle } from "src/components";
+import { HalfCircle, Different, Footer } from "src/components";
 
 export const Introduction: React.FC = () => {
   const animatedItem = {
@@ -37,7 +37,12 @@ export const Introduction: React.FC = () => {
         <S.SecondContainer>
           <HalfCircle />
         </S.SecondContainer>
-        <S.ThreeContainer></S.ThreeContainer>
+        <S.ThreeContainer>
+          <Different />
+        </S.ThreeContainer>
+        <S.FourContainer>
+          <Footer />
+        </S.FourContainer>
       </S.IntroductionContainer>
     </>
   );

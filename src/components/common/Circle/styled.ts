@@ -14,13 +14,17 @@ export const CircleContaner = styled.div`
   display: flex;
 `;
 
-export const CircleText = styled.div`
+export const CircleImgBox = styled.div`
   width: 19rem;
   height: 19rem;
   background-color: #ffffff;
   border-radius: 20rem;
   margin-right: 5rem;
   margin-left: 5rem;
+`;
+
+export const CircleImg = styled.img`
+  margin-top: 5rem;
 `;
 
 export const CircleUnderContainer = styled.div`
