@@ -6,6 +6,7 @@ export const Navbar: React.FC = () => {
   const [navSize, setnavSize] = useState("7rem");
   const [navColor, setnavColor] = useState("transparent");
   const [contentColor, setcontentColor] = useState("transparent");
+  const [contentColor2, setcontentColor2] = useState("transparent");
   const [underColor, setunderColor] = useState("transparent");
   const [titleColor, settitleColor] = useState("#ffffff");
   const listenScrollEvent = () => {
@@ -15,6 +16,9 @@ export const Navbar: React.FC = () => {
     window.scrollY > 10
       ? setcontentColor("black")
       : setcontentColor("transparent");
+    window.scrollY > 10
+      ? setcontentColor2("black")
+      : setcontentColor2("transparent");
     window.scrollY > 10
       ? setunderColor("0.5rem solid rgba(49, 70, 237)")
       : setunderColor("transparent");
@@ -54,7 +58,7 @@ export const Navbar: React.FC = () => {
               onClick={select}
               style={{
                 borderBottom: !working ? underColor : "none",
-                color: working2 ? "#2827A6" : contentColor,
+                color: working ? contentColor : "#2827A6",
               }}
               to="/"
             >
@@ -63,10 +67,8 @@ export const Navbar: React.FC = () => {
             <S.NavbarSelect
               onClick={select2}
               style={{
-                borderBottom: !working2
-                  ? "0.5rem solid rgba(49, 70, 237)"
-                  : "none",
-                color: !working2 ? "#2827A6" : contentColor,
+                borderBottom: !working2 ? underColor : "none",
+                color: !working2 ? "#2827A6" : contentColor2,
               }}
               to="/content"
             >

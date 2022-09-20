@@ -40,9 +40,5 @@ export const SecondContainer = styled.div`
 
 export const ThreeContainer = styled.div`
   width: 100%;
-  padding-top: 83rem;
-`;
-
-export const FourContainer = styled.div`
-  margin-top: 25rem;
+  padding-top: 70rem;
 `;

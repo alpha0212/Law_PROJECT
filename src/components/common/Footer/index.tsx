@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
         </S.InfoText>
         <S.InfoText>국가법령정보센터 | 현장피해보고센터</S.InfoText>
         <S.InfoText>
-          서울특별시 서대문구 Copyright(c) 권혜정 All rights reserved.
+          서울특별시 서대문구 Copyright(c) P&G All rights reserved.
         </S.InfoText>
       </S.InfoTextContainer>
     </S.FooterContainer>

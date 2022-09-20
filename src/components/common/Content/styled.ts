@@ -8,6 +8,7 @@ export const ContentBannerImg = styled.img`
 
 export const ChooseContainer = styled.div`
   width: 100%;
+  padding-top: 100rem;
 `;
 
 export const Choose = styled.button`

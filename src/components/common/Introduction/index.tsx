@@ -40,9 +40,6 @@ export const Introduction: React.FC = () => {
         <S.ThreeContainer>
           <Different />
         </S.ThreeContainer>
-        <S.FourContainer>
-          <Footer />
-        </S.FourContainer>
       </S.IntroductionContainer>
     </>
   );

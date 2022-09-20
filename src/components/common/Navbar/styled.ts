@@ -9,7 +9,7 @@ export const NavbarContainer = styled.div`
   right: 0;
 
   z-index: 80;
-  padding-top: 2.5vh;
+  padding-top: 2.5rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -21,15 +21,15 @@ export const NavbarContainer = styled.div`
 export const Logo = styled(Link)`
   font-family: Pretendard;
   font-weight: 600;
-  font-size: 2.5vh;
-  padding-bottom: 2.5vh;
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
   transform: translate(-57%, 0);
   padding-left: 32.5%;
   text-decoration: none;
 `;
 
 export const LinkContainer = styled.div`
-  padding-bottom: 2.7vh;
+  padding-bottom: 2.7rem;
   padding-right: 50vw;
 `;
 
@@ -41,12 +41,12 @@ export const NavbarList = styled.div`
 export const NavbarSelect = styled(Link)`
   text-decoration: none;
   color: black;
-  margin-left: 4vh;
-  margin-right: 4vh;
+  margin-left: 4rem;
+  margin-right: 4rem;
   font-size: 1.4rem;
   font-weight: 500;
   transition: all 0.3s;
-  padding-bottom: 2.6vh;
+  padding-bottom: 2.6rem;
   &:hover {
     color: rgba(156, 158, 225);
     transition: all 0.3s;

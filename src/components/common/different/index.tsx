@@ -1,5 +1,7 @@
 import React from "react";
 import * as S from "./styled";
+import PersonPNG from "src/assets/Person.png";
+import PeoplePNG from "src/assets/People.png";
 
 //circle
 export const Different = () => {
@@ -21,6 +23,19 @@ export const Different = () => {
           <S.sCircle />
         </S.RightCircleContainer>
       </S.differentContainer>
+      <S.vsContainer>
+        <S.marginFlexContainer>
+          <S.PersonImg src={PersonPNG} />
+          <S.vs>VS</S.vs>
+          <S.PeopleImg src={PeoplePNG} />
+        </S.marginFlexContainer>
+        <S.onlyFlex>
+          <S.oneContainer>
+            <S.oneAndOne>비방과 비난</S.oneAndOne>
+            <S.one>비판</S.one>
+          </S.oneContainer>
+        </S.onlyFlex>
+      </S.vsContainer>
       <S.DescriptionContainer>
         <S.Description>
           비방, 비난, 그리고 비판의 사전적 의미를 살펴보자면
