@@ -8,20 +8,32 @@ export const ContentBannerImg = styled.img`
 
 export const ChooseContainer = styled.div`
   width: 100%;
-  padding-top: 100rem;
+  flex-direction: row;
+  display: flex;
+`;
+
+export const SortChoose = styled.div`
+  display: flex;
+  margin: auto;
 `;
 
 export const Choose = styled.button`
   width: 14rem;
   height: 3rem;
-  box-shadow: 0.1rem 0.3rem 0.6rem #dde1f8;
+  &:hover {
+    box-shadow: 0.1rem 0.3rem 0.6rem #dde1f8;
+  }
   border-radius: 1.4rem;
   border: none;
   justify-content: center;
+  margin: 5rem 3rem 0 3rem;
+  background: none;
 `;
 
 export const ChooseText = styled.div`
-  color: #2827a6;
+  &:hover {
+    color: #2827a6;
+  }
   font-size: 1.4rem;
   text-align: center;
   font-weight: 600;

@@ -10,9 +10,14 @@ export const Content: React.FC = () => {
         <S.ContentBannerImg src={DesktopPNG} alt="desktop" />
       </S.ContentBanner>
       <S.ChooseContainer>
-        <S.Choose>
-          <S.ChooseText>사이버 명예훼손</S.ChooseText>
-        </S.Choose>
+        <S.SortChoose>
+          <S.Choose>
+            <S.ChooseText>사이버 명예훼손</S.ChooseText>
+          </S.Choose>
+          <S.Choose>
+            <S.ChooseText>사이버 모욕</S.ChooseText>
+          </S.Choose>
+        </S.SortChoose>
       </S.ChooseContainer>
     </>
   );
