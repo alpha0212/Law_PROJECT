@@ -54,7 +54,7 @@ export const Different = () => {
         </S.Description>
         <S.Description>
           자연스럽게 누군가에 대한 비방과 비난의 글이 될 수 있고 그로 인해
-          처벌을 받을 가능성이 생긱게 되므로
+          처벌을 받을 가능성이 생기게 되므로
         </S.Description>
         <S.Description>
           항상 주의하며 글을 작성하는 등의 인터넷 활동을 해야 한다.
