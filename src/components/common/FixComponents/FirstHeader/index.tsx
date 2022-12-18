@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import * as S from "./styled";
 
-export const Navbar: React.FC = () => {
+export const FirstHeader: React.FC = () => {
   const [navSize, setnavSize] = useState("7rem");
   const [navColor, setnavColor] = useState("transparent");
   const [contentColor, setcontentColor] = useState("transparent");
@@ -11,26 +11,6 @@ export const Navbar: React.FC = () => {
   const [titleColor, settitleColor] = useState("#ffffff");
   const [working, setWorking] = useState(false);
   const [working2, setWorking2] = useState(true);
-  const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#ffffff") : setnavColor("transparent");
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("7rem");
-    window.scrollY > 10 ? settitleColor("#2827a6") : settitleColor("#ffffff");
-    window.scrollY > 10
-      ? setcontentColor("black")
-      : setcontentColor("transparent");
-    window.scrollY > 10
-      ? setcontentColor2("black")
-      : setcontentColor2("transparent");
-    window.scrollY > 10
-      ? setunderColor("0.5rem solid rgba(49, 70, 237)")
-      : setunderColor("transparent");
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-    return () => {
-      window.removeEventListener("scroll", listenScrollEvent);
-    };
-  }, []);
   const select = () => {
     setWorking(false);
     setWorking2(true);
@@ -50,7 +30,7 @@ export const Navbar: React.FC = () => {
         }}
       >
         <S.Logo to="/" style={{ color: titleColor }}>
-          LAW
+          HJ
         </S.Logo>
         <S.LinkContainer>
           <S.NavbarList>
