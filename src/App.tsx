@@ -1,8 +1,10 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Content, Footer, Navbar } from "src/components";
+import { Footer, Navbar } from "src/components";
+import { Content } from "src/pages";
 
 import { MainPage } from "./pages";
+import { FirstPage } from "./pages/firstPage/index";
 
 export const App: React.FC = () => {
   /**
@@ -12,8 +14,12 @@ export const App: React.FC = () => {
     <>
       <Navbar />
       <Routes>
-        <Route index element={<MainPage />} />
-        <Route path="/content" element={<Content />} />
+        <Route index element={<FirstPage />} />
+        <Route path="/intro" element={<MainPage />} />
+        <Route path="/content" element={<Content />}>
+          <Route path="defamation" element={<Content />} />
+          <Route path="insult" element={<Content />} />
+        </Route>
       </Routes>
       <Footer />
     </>
