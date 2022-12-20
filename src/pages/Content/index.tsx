@@ -3,6 +3,7 @@ import * as S from "./styled";
 
 import DesktopPNG from "src/assets/Desktop.png";
 import { CategoryTem } from "src/Template";
+import { ContentDescription } from "src/components/common/ContentComponents";
 
 export const Content: React.FC = () => {
   const [clicked, setClicked] = useState(false);
@@ -65,6 +66,7 @@ export const Content: React.FC = () => {
           </S.Choose>
         </S.SortChoose>
       </S.ChooseContainer>
+      <ContentDescription />
       <CategoryTem />
     </>
   );
