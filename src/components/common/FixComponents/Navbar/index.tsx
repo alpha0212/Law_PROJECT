@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
                 borderBottom: !working ? underColor : "none",
                 color: working ? contentColor : "#2827A6",
               }}
-              to="/"
+              to="/intro"
             >
               INTRODUCTION
             </S.NavbarSelect>
