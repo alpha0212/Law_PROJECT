@@ -6,3 +6,5 @@ export * from "./CircleUnderContent";
 export * from "./Circle";
 export * from "./different";
 export * from "./FixComponents";
+export * from "./Category/cyberdefamation";
+export * from "./Category/cyberinsult";
