@@ -24,7 +24,6 @@ export const FirstPage = () => {
   };
   return (
     <>
-      <FirstHeader />
       <S.back src={back} alt="Background Image" />
       <S.TitleContainer>
         <S.MainTitle {...animatedItem[0]}>

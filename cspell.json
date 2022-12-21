@@ -1,7 +1,16 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["browserslist", "TTFB", "craco", "spoqa"],
+  "words": [
+    "browserslist",
+    "craco",
+    "setnav",
+    "settitle",
+    "spoqa",
+    "TTFB"
+  ],
   "flagWords": [],
-  "ignorePaths": ["node_modules/**"]
+  "ignorePaths": [
+    "node_modules/**"
+  ]
 }

@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 import * as S from "./styled";
+import { useLocation } from "react-router";
 
 export const Navbar: React.FC = () => {
+  const location = useLocation();
+  const show = location.pathname.split("/")[1];
+
   const [navSize, setnavSize] = useState("7rem");
   const [navColor, setnavColor] = useState("transparent");
   const [contentColor, setcontentColor] = useState("transparent");
   const [contentColor2, setcontentColor2] = useState("transparent");
   const [underColor, setunderColor] = useState("transparent");
   const [titleColor, settitleColor] = useState("#ffffff");
+
   const [working, setWorking] = useState(false);
   const [working2, setWorking2] = useState(true);
   const listenScrollEvent = () => {
@@ -39,6 +44,12 @@ export const Navbar: React.FC = () => {
     setWorking(true);
     setWorking2(false);
   };
+  useEffect(() => {
+    if (show === "content") {
+      setWorking(true);
+      setWorking2(false);
+    }
+  }, []);
   return (
     <>
       <S.NavbarContainer
