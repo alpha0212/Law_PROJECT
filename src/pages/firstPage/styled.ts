@@ -67,6 +67,11 @@ export const Start2 = styled(NavLink)`
   border: 2px solid #ffffff;
   color: #ffffff;
   text-decoration: none;
+  font-weight: 500;
+  :hover {
+    color: #180f84;
+    background: white;
+  }
 `;
 
 export const StartCenter2 = styled.div`
