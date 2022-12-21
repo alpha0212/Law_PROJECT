@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 export const Background = styled.div`
   position: relative;
@@ -6,12 +7,11 @@ export const Background = styled.div`
   background-color: rgba(98, 129, 224);
 `;
 
-export const back = styled.img`
+export const back2 = styled.img`
   width: 100%;
-  height: 100%;
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer2 = styled.div`
   width: 40vw;
   position: absolute;
   @media screen and (max-width: 400px) {
@@ -25,14 +25,14 @@ export const TitleContainer = styled.div`
   padding-left: 13%;
 `;
 
-export const MainTitle = styled.div`
+export const MainTitle2 = styled.div`
   font-family: Pretendard;
   font-weight: bold;
   color: #fff;
   font-size: 2.5vw;
 `;
 
-export const SubTitle = styled.div`
+export const SubTitle2 = styled.div`
   font-family: Pretendard;
   font-weight: 500;
   font-size: 1.5vw;
@@ -41,7 +41,7 @@ export const SubTitle = styled.div`
   color: rgba(255, 255, 255, 0.75);
 `;
 
-export const SubText = styled.div`
+export const SubText2 = styled.div`
   font-family: Pretendard;
   font-weight: 500;
   font-size: 1vw;
@@ -49,14 +49,40 @@ export const SubText = styled.div`
   line-height: 1.5vw;
 `;
 
-export const ScrollContainer = styled.div`
-  position: absolute;
+export const FirstPageContainer2 = styled.div`
+  display: flex;
   width: 100%;
-  text-align: center;
-  z-index: 4;
-  top: 30rem;
 `;
 
-export const ScrollHelp = styled.div`
-  display: inline-block;
+export const StartContainer2 = styled.div`
+  margin: auto;
+  position: absolute;
+  top: 85rem;
+  left: 43%;
+`;
+export const Start2 = styled(NavLink)`
+  display: flex;
+  width: 18rem;
+  border-radius: 3.3rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+`;
+
+export const StartCenter2 = styled.div`
+  margin: auto;
+  display: flex;
+`;
+
+export const TextContainer2 = styled.div`
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin-left: 1.5rem;
+`;
+
+export const ArrowContainer2 = styled.div`
+  padding-top: 1.15rem;
+  margin-left: 1.5rem;
+  font-size: 2rem;
 `;
