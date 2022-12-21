@@ -1,23 +1,53 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./styled";
 
 import DesktopPNG from "src/assets/Desktop.png";
 import { CategoryTem } from "src/Template";
-import { ContentDescription } from "src/components/common/ContentComponents";
+import {
+  Content2Line,
+  ContentDescription,
+} from "src/components/common/ContentComponents";
+import { Content3Line } from "src/components/common/ContentComponents/Content3Line";
+import { useLocation, useNavigate } from "react-router";
+import { Content4Line } from "src/components/common/ContentComponents/Content4Line";
 
 export const Content: React.FC = () => {
+  const location = useLocation();
+  const show = location.pathname.split("/")[2];
   const [clicked, setClicked] = useState(false);
   const [clicked2, setClicked2] = useState(false);
+  const [showBoolean, setShowBoolean] = useState("content");
+  const navigate = useNavigate();
   const onClicked = () => {
-    setClicked(true);
+    setClicked(!clicked);
     setClicked2(false);
-    console.log(clicked);
+    if (show === "defamation") {
+      setShowBoolean("defamation");
+    }
+    if (clicked === true) {
+      navigate("/content");
+    }
   };
+  useEffect(() => {
+    if (show === "insult") {
+      setClicked2(true);
+    }
+    if (show === "defamation") {
+      setClicked(true);
+    }
+  }, []);
   const onClicked2 = () => {
     setClicked(false);
-    setClicked2(true);
+    setClicked2(!clicked2);
     console.log(clicked2);
+    if (show === "insult") {
+      setShowBoolean("insult");
+    }
+    if (clicked2 === true) {
+      navigate("/content");
+    }
   };
+
   return (
     <>
       <S.ContentBanner>
@@ -66,8 +96,19 @@ export const Content: React.FC = () => {
           </S.Choose>
         </S.SortChoose>
       </S.ChooseContainer>
-      <ContentDescription />
-      <CategoryTem />
+      <S.BannerUnderContents>
+        {show === "defamation" || show === "insult" ? (
+          <></>
+        ) : (
+          <>
+            <ContentDescription />
+            <Content2Line />
+            <Content4Line />
+          </>
+        )}
+
+        <CategoryTem />
+      </S.BannerUnderContents>
     </>
   );
 };

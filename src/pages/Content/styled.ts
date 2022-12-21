@@ -42,3 +42,5 @@ export const ChooseText = styled(NavLink)`
   padding: 0.5rem 0rem;
   text-decoration: none;
 `;
+
+export const BannerUnderContents = styled.div``;
