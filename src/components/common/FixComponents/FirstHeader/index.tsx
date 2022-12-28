@@ -17,7 +17,7 @@ export const FirstHeader: React.FC = () => {
         }}
       >
         <S.Logo to="/" style={{ color: titleColor }}>
-          Law
+          LAW
         </S.Logo>
       </S.NavbarContainer>
     </>
