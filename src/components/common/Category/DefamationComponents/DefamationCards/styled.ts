@@ -14,9 +14,7 @@ export const CarouselStyled = styled(Slider)`
     overflow: hidden;
   }
   .slick-slide {
-    width: 37rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    width: 41.2rem;
   }
   .slick-dots {
     margin-bottom: -2rem;
@@ -34,10 +32,36 @@ export const DefamationCard = styled.div`
   border: 1px solid #f3f3f3;
   border-radius: 3rem;
   box-shadow: 1px 3px 6px #00000029;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const DefamationCardContainer = styled.div`
   width: 100%;
   height: 50rem;
   margin-top: 10rem;
+`;
+
+export const DefamationCardIcon = styled.img`
+  margin: auto;
+  padding-top: 47px;
+`;
+
+export const DefamationTitle = styled.div`
+  text-align: center;
+  letter-spacing: 0.16px;
+  color: #231815;
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding-top: 2.2rem;
+`;
+
+export const DefamationText = styled.div`
+  height: 45px;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.1px;
+  color: #231815;
+  padding-top: 10px;
+  line-height: 1.8rem;
 `;
