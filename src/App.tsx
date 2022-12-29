@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { Footer, Navbar } from "src/components";
-import { Content } from "src/pages";
+import { Content, SolutionPage } from "src/pages";
 
 import { MainPage } from "./pages";
 import { FirstPage } from "./pages/firstPage/index";
@@ -33,6 +33,7 @@ export const App: React.FC = () => {
           <Route path="defamation" element={<Content />} />
           <Route path="insult" element={<Content />} />
         </Route>
+        <Route path="/solution" element={<SolutionPage />} />
       </Routes>
       {show === "" ? <></> : <Footer />}
     </>
