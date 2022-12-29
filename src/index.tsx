@@ -1,17 +1,19 @@
 import { Global } from "@emotion/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, useLocation } from "react-router-dom";
 
 import { App } from "src/App";
 import reportWebVitals from "src/reportWebVitals";
 import { globalStyle } from "src/styles";
+import { ScrollSetTop } from "./hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Global styles={globalStyle} />
+      {<ScrollSetTop />}
       <App />
     </BrowserRouter>
   </React.StrictMode>
