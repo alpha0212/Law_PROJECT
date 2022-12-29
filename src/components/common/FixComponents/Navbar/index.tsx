@@ -11,11 +11,12 @@ export const Navbar: React.FC = () => {
   const [navColor, setnavColor] = useState("transparent");
   const [contentColor, setcontentColor] = useState("transparent");
   const [contentColor2, setcontentColor2] = useState("transparent");
-  const [underColor, setunderColor] = useState("transparent");
+  const [underColor, setunderColor] = useState(false);
   const [titleColor, settitleColor] = useState("#ffffff");
 
   const [working, setWorking] = useState(false);
-  const [working2, setWorking2] = useState(true);
+  const [working2, setWorking2] = useState(false);
+  const [working3, setWorking3] = useState(false);
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#ffffff") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("7rem");
@@ -26,9 +27,7 @@ export const Navbar: React.FC = () => {
     window.scrollY > 10
       ? setcontentColor2("black")
       : setcontentColor2("transparent");
-    window.scrollY > 10
-      ? setunderColor("0.5rem solid rgba(49, 70, 237)")
-      : setunderColor("transparent");
+    window.scrollY > 10 ? setunderColor(true) : setunderColor(false);
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -37,12 +36,19 @@ export const Navbar: React.FC = () => {
     };
   }, []);
   const select = () => {
-    setWorking(false);
-    setWorking2(true);
-  };
-  const select2 = () => {
     setWorking(true);
     setWorking2(false);
+    setWorking3(false);
+  };
+  const select2 = () => {
+    setWorking(false);
+    setWorking2(true);
+    setWorking3(false);
+  };
+  const select3 = () => {
+    setWorking(false);
+    setWorking2(false);
+    setWorking3(true);
   };
   useEffect(() => {
     if (show === "content") {
@@ -67,23 +73,27 @@ export const Navbar: React.FC = () => {
           <S.NavbarList>
             <S.NavbarSelect
               onClick={select}
-              style={{
-                borderBottom: !working ? underColor : "none",
-                color: working ? contentColor : "#2827A6",
-              }}
+              UnderLine={working}
+              NotShow={underColor}
               to="/intro"
             >
               INTRODUCTION
             </S.NavbarSelect>
             <S.NavbarSelect
               onClick={select2}
-              style={{
-                borderBottom: !working2 ? underColor : "none",
-                color: !working2 ? "#2827A6" : contentColor2,
-              }}
+              UnderLine={working2}
+              NotShow={underColor}
               to="/content"
             >
               CONTENT
+            </S.NavbarSelect>
+            <S.NavbarSelect
+              onClick={select3}
+              UnderLine={working3}
+              NotShow={underColor}
+              to="/solution"
+            >
+              SOLUTION
             </S.NavbarSelect>
           </S.NavbarList>
         </S.LinkContainer>
