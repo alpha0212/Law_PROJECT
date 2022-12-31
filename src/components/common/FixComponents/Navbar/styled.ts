@@ -8,7 +8,7 @@ export const NavbarContainer = styled.div`
   left: 0;
   right: 0;
 
-  z-index: 80;
+  z-index: 99;
   padding-top: 2.5rem;
   font-weight: bold;
   display: flex;
