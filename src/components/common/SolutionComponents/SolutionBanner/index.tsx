@@ -19,7 +19,11 @@ export const SolutionBanner = () => {
           </S.SolutionIntroDescription>
         </S.SolutionTextContainer>
         <S.SolutionIllustrationContainer>
-          <S.SolutionIllustration />
+          <S.SolutionIllustration
+            src={
+              "https://cdn.discordapp.com/attachments/1054718420651872266/1057286760457048104/28.png"
+            }
+          />
         </S.SolutionIllustrationContainer>
       </S.SolutionBanner>
     </S.SolutionBannerContainer>

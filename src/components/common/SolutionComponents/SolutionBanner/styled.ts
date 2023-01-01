@@ -10,22 +10,22 @@ export const SolutionBanner = styled.div`
 `;
 
 export const SolutionTextContainer = styled.div`
-  width: 70rem;
-  height: 500px;
-  margin-left: 12%;
-  margin-top: 23.1rem;
-  z-index: 1;
+  margin: auto;
+  margin-left: 15%;
 `;
 
 export const SolutionIllustrationContainer = styled.div`
   padding-top: 10rem;
-  margin-right: 12%;
+  margin-top: 15rem;
+  @media screen and (min-width: "1000px") {
+    margin-right: 30%;
+  }
+  margin-right: 15rem;
 `;
 
-export const SolutionIllustration = styled.div`
-  background-image: url("https://cdn.discordapp.com/attachments/1054718420651872266/1057286760457048104/28.png");
-  width: 60.5rem;
-  height: 55rem;
+export const SolutionIllustration = styled.img`
+  width: 45.5rem;
+  height: 40rem;
 `;
 
 export const SolutionSmallPoint = styled.div`

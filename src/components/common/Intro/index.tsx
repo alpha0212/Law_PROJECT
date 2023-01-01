@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./styled";
 import back from "src/assets/background.jpg";
+import License from "src/assets/License.gif";
 import { useScrollFadeIn } from "src/hooks/useScrollFadeIn";
 
 export const Intro = () => {
@@ -23,7 +24,7 @@ export const Intro = () => {
   };
   return (
     <>
-      <S.back src={back} alt="Background Image" />
+      <S.back src={License} alt="Background Image" />
       <S.TitleContainer>
         <S.MainTitle {...animatedItem[0]}>
           밝게 빛나는 화면 속 어두운 이야기
