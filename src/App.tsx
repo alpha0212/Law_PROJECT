@@ -1,15 +1,10 @@
 import React from "react";
-import {
-  Route,
-  BrowserRouter as Router,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Footer, Navbar } from "src/components";
-import { Content, SolutionPage } from "src/pages";
+import { Content, HelpPage, SolutionPage } from "src/pages";
 
 import { MainPage } from "./pages";
-import { FirstPage } from "./pages/firstPage/index";
+import { FirstPage } from "./pages/FirstPage/index";
 import { FirstHeader } from "src/components/common/FixComponents/FirstHeader";
 
 export const App: React.FC = () => {
@@ -34,6 +29,7 @@ export const App: React.FC = () => {
           <Route path="insult" element={<Content />} />
         </Route>
         <Route path="/solution" element={<SolutionPage />} />
+        <Route path="/help" element={<HelpPage />} />
       </Routes>
       {show === "" ? <></> : <Footer />}
     </>
