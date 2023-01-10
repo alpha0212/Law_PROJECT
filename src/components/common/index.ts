@@ -9,3 +9,4 @@ export * from "./FixComponents";
 export * from "./Category/DefamationComponents/CyberDefamation";
 export * from "./Category/InsultComponents/cyberInsult";
 export * from "./Category/DefamationComponents/CyberDefamationText";
+export * from "./HelpComponents";
