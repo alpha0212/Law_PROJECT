@@ -31,6 +31,7 @@ export const HelpIntroTitleDesc = styled.div`
   letter-spacing: 0.15px;
   line-height: 25px;
   color: #e6edff;
+  margin-top: 3rem;
 `;
 
 export const HelpIntroTextFlex = styled.div`
