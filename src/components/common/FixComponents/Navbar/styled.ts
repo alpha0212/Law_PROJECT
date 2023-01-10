@@ -39,11 +39,10 @@ export const NavbarList = styled.div`
 `;
 
 export const NavbarSelect = styled(Link)<{
-  UnderLine: Boolean;
-  NotShow: Boolean;
+  underline: String;
 }>`
   text-decoration: none;
-  color: ${(props) => (props.UnderLine ? "#2827A6" : "black")};
+  color: ${(props) => (props.underline === "true" ? "#2827A6" : "black")};
   margin-left: 4rem;
   margin-right: 4rem;
   font-size: 1.4rem;
@@ -51,7 +50,7 @@ export const NavbarSelect = styled(Link)<{
   transition: all 0.3s;
   padding-bottom: 2.6rem;
   border-bottom: ${(props) =>
-    props.UnderLine ? "0.5rem solid rgba(49, 70, 237)" : "none"};
+    props.underline === "true" ? "0.5rem solid rgba(49, 70, 237)" : "none"};
   &:hover {
     color: rgba(156, 158, 225);
     transition: all 0.3s;
