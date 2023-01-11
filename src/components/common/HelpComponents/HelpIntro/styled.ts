@@ -37,3 +37,13 @@ export const HelpIntroTitleDesc = styled.div`
 export const HelpIntroTextFlex = styled.div`
   display: flex;
 `;
+
+export const HelpIntroAlertText = styled.div`
+  text-align: right;
+  font-size: 1.5rem;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+  color: #e6edff;
+  margin-top: 3rem;
+  margin-left: 19.8%;
+`;
