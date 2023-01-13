@@ -1,10 +1,11 @@
 import styled from "@emotion/styled";
 
 export const FooterContainer = styled.footer`
+  position: absolute;
   width: 100%;
   display: flex;
   padding-top: 30rem;
-  margin-bottom: 2rem;
+  margin-top: 20rem;
 `;
 
 export const InfoContainer = styled.div`
