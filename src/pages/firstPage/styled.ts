@@ -8,19 +8,13 @@ export const Background = styled.div`
 `;
 
 export const back2 = styled.img`
-  width: 100%;
+  width: 1550vw;
 `;
 
 export const TitleContainer2 = styled.div`
   width: 40vw;
   position: absolute;
-  @media screen and (max-width: 400px) {
-    top: 21vh;
-  }
-  @media screen and (max-width: 36rem) {
-    top: 35vw;
-  }
-  top: 28vw;
+  top: 20vw;
   z-index: 3;
   padding-left: 13%;
 `;
@@ -57,7 +51,7 @@ export const FirstPageContainer2 = styled.div`
 export const StartContainer2 = styled.div`
   margin: auto;
   position: absolute;
-  top: 85rem;
+  top: 46vw;
   left: 43%;
 `;
 export const Start2 = styled(NavLink)`
