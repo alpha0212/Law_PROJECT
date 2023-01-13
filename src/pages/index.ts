@@ -1,5 +1,5 @@
 export * from "./main";
-export * from "./FirstPage";
+export * from "./firstPage";
 export * from "./Content";
 export * from "./ContentPages";
 export * from "./SolutionPage";

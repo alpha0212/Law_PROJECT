@@ -4,7 +4,7 @@ import { Footer, Navbar } from "src/components";
 import { Content, HelpPage, SolutionPage } from "src/pages";
 
 import { MainPage } from "./pages";
-import { FirstPage } from "./pages/FirstPage/index";
+import { FirstPage } from "./pages/firstPage/index";
 import { FirstHeader } from "src/components/common/FixComponents/FirstHeader";
 
 export const App: React.FC = () => {
