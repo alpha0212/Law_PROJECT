@@ -2,7 +2,7 @@ import React from "react";
 
 import * as S from "./styled";
 import { useScrollFadeIn } from "src/hooks/useScrollFadeIn";
-import { HalfCircle, Different, Footer } from "src/components";
+import { HalfCircle, Different } from "src/components";
 
 export const Introduction: React.FC = () => {
   const animatedItem = {
