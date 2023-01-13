@@ -10,23 +10,25 @@ export const Insult5Line: React.FC = () => {
         표현에 해당되어 모욕죄가 성립한다.
       </S.Insult5LineDesc>
       <S.Insult5ContentContainer>
-        <S.OneBox>
-          <S.BoxText style={{ marginTop: "2.7rem" }}>
-            부모님을 언급하는 폐륜적 언행
-          </S.BoxText>
-        </S.OneBox>
-        <S.TwoBox>
-          <S.BoxText style={{ marginTop: "2rem" }}>모멸감 주는 언행</S.BoxText>
-        </S.TwoBox>
-        <S.ThreeBox>
-          <S.BoxText style={{ marginTop: "2.5rem" }}>
-            비속어를 포함한 댓글을 작성하는 행위
-          </S.BoxText>
-        </S.ThreeBox>
-        <S.FourBox>
-          <S.BoxText style={{ marginTop: "1.2rem" }}>성적인 발언</S.BoxText>
-        </S.FourBox>
         <S.CircleContainer>
+          <S.OneBox>
+            <S.BoxText style={{ marginTop: "2.7rem" }}>
+              부모님을 언급하는 폐륜적 언행
+            </S.BoxText>
+          </S.OneBox>
+          <S.TwoBox>
+            <S.BoxText style={{ marginTop: "2rem" }}>
+              모멸감 주는 언행
+            </S.BoxText>
+          </S.TwoBox>
+          <S.ThreeBox>
+            <S.BoxText style={{ marginTop: "2.5rem" }}>
+              비속어를 포함한 댓글을 작성하는 행위
+            </S.BoxText>
+          </S.ThreeBox>
+          <S.FourBox>
+            <S.BoxText style={{ marginTop: "1.2rem" }}>성적인 발언</S.BoxText>
+          </S.FourBox>
           <S.Circle />
           <S.stick />
           <S.MStick />

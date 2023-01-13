@@ -30,6 +30,7 @@ export const Insult5LineDesc = styled.div`
 
 export const Insult5LineImg = styled.img``;
 
+export const BoxContainer = styled.div``;
 export const CircleContainer = styled.div`
   margin: auto;
   margin-top: 12.6rem;
@@ -40,8 +41,8 @@ export const SCircle = styled.div`
   height: 10px;
   border-radius: 1rem;
   background: #ffffff 0% 0% no-repeat padding-box;
-  margin-left: 22.8rem;
-  margin-top: -9rem;
+  margin-left: 21.7rem;
+  margin-top: -10rem;
 `;
 export const MCircle = styled.div`
   width: 14px;
@@ -62,9 +63,9 @@ export const SStick = styled.div`
   width: 60px;
   height: 2px;
   background: #ffffff;
-  margin-left: 18.3rem;
-  margin-top: 1.4rem;
-  rotate: 136deg;
+  margin-left: 17.8rem;
+  margin-top: 1.9rem;
+  rotate: 120deg;
 `;
 export const MStick = styled.div`
   width: 80px;
@@ -94,17 +95,17 @@ export const OneBox = styled.div`
   border: 3px solid #ffffff;
   border-radius: 50px;
   position: absolute;
-  margin-left: 42rem;
-  margin-top: 7.5rem;
   color: #ffffff;
   :hover {
     color: #919fe6;
     background: #ffffff;
   }
+  margin-left: -41rem;
+  margin-top: -5.2rem;
 `;
 export const BoxText = styled.div`
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   //#919fe6
 `;
@@ -115,13 +116,13 @@ export const TwoBox = styled.div`
   border: 3px solid #ffffff;
   border-radius: 5rem;
   position: absolute;
-  margin-left: 106rem;
-  margin-top: 8rem;
   color: #ffffff;
   :hover {
     color: #919fe6;
     background: #ffffff;
   }
+  margin-top: -5rem;
+  margin-left: 22.5rem;
 `;
 export const ThreeBox = styled.div`
   width: 47rem;
@@ -129,13 +130,13 @@ export const ThreeBox = styled.div`
   border: 3px solid #ffffff;
   border-radius: 5rem;
   position: absolute;
-  margin-left: 115rem;
-  margin-top: 20rem;
   color: #ffffff;
   :hover {
     color: #919fe6;
     background: #ffffff;
   }
+  margin-top: 8rem;
+  margin-left: 32.5rem;
 `;
 export const FourBox = styled.div`
   width: 20rem;
@@ -143,11 +144,11 @@ export const FourBox = styled.div`
   border: 3px solid #e1e7f7;
   border-radius: 5rem;
   position: absolute;
-  margin-left: 79.5rem;
-  margin-top: 26rem;
   color: #e1e7f7;
   :hover {
     color: #919fe6;
     background: #e1e7f7;
   }
+  margin-top: 13.5rem;
+  margin-left: -5rem;
 `;
