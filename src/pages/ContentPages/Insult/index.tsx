@@ -3,6 +3,7 @@ import * as S from "./styled";
 import { CyberInsult } from "src/components";
 import {
   CyberInsultText,
+  Insult5Line,
   InsultCards,
 } from "src/components/common/Category/InsultComponents";
 import { InsultDescription } from "src/components/common/Category/InsultComponents/InsultDescription";
@@ -37,6 +38,9 @@ export const Insult: React.FC = () => {
       <S.Insult4Line>
         <HowValidatedInsult />
       </S.Insult4Line>
+      <S.Insult5LineSection>
+        <Insult5Line />
+      </S.Insult5LineSection>
     </S.InsultSection>
   );
 };
