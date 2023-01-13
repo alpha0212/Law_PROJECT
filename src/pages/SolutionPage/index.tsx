@@ -3,6 +3,8 @@ import * as S from "./styled";
 import {
   HorizontalLine,
   SolutionBanner,
+  SolutionCard,
+  SolutionHowHealing,
   SolutionOneSection,
   SolutionThreeCard,
   SolutionThreeSectionDescription,
@@ -12,6 +14,19 @@ import { SolutionFourDescription } from "src/components/common/SolutionComponent
 import { SolutionFourSection } from "../../components/common/SolutionComponents/SolutionFourSection/index";
 
 export const SolutionPage: React.FC = () => {
+  const CardNames = [
+    {
+      ImgSrc: [
+        "https://cdn.discordapp.com/attachments/1054718420651872266/1057287646034018415/77.png",
+        "https://cdn.discordapp.com/attachments/1054718420651872266/1057287646432460801/79.png",
+        "https://cdn.discordapp.com/attachments/1054718420651872266/1057287647292309584/81.png",
+        "https://cdn.discordapp.com/attachments/1054718420651872266/1057287646877077634/83.png",
+        "https://cdn.discordapp.com/attachments/1054718420651872266/1057287647669780500/85.png",
+      ],
+      name: ["여행", "독서", "만남", "휴식", "그 외"],
+    },
+  ];
+  const ForNum = [0, 1, 2, 3, 4];
   return (
     <S.Solution>
       <SolutionBanner />
@@ -55,6 +70,25 @@ export const SolutionPage: React.FC = () => {
           "해당 내용을 검토하여 성립 요건이 해당이 되는지, 전문적으로 파헤쳐 볼 필요가 있다."
         }
       />
+      <S.SolutionHealingContainer>
+        <SolutionHowHealing
+          HealingText={"상처가 난 내 마음, 어떻게 치료해야할까?"}
+        />
+        <S.SolutionHealingBackground>
+          <S.SolutionCardContainer>
+            {ForNum.map((val: any, key: number) => {
+              return (
+                <S.SolutionList key={key}>
+                  <SolutionCard
+                    ImgSrc={CardNames[0].ImgSrc[val]}
+                    NameText={CardNames[0].name[val]}
+                  />
+                </S.SolutionList>
+              );
+            })}
+          </S.SolutionCardContainer>
+        </S.SolutionHealingBackground>
+      </S.SolutionHealingContainer>
     </S.Solution>
   );
 };
