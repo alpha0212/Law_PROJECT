@@ -1,5 +1,10 @@
 import styled from "@emotion/styled";
 
+export const IntroContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Background = styled.div`
   position: relative;
   width: 100%;
@@ -13,13 +18,7 @@ export const back = styled.img`
 export const TitleContainer = styled.div`
   width: 40vw;
   position: absolute;
-  @media screen and (max-width: 400px) {
-    top: 21vh;
-  }
-  @media screen and (max-width: 36rem) {
-    top: 35vw;
-  }
-  top: 28vw;
+  top: 20vw;
   z-index: 3;
   padding-left: 13%;
 `;
@@ -53,7 +52,7 @@ export const ScrollContainer = styled.div`
   width: 100%;
   text-align: center;
   z-index: 4;
-  top: 30rem;
+  top: 15 vw;
 `;
 
 export const ScrollHelp = styled.div`

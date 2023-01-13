@@ -3,11 +3,12 @@ import * as S from "./styled";
 import back from "src/assets/background.jpg";
 import License from "src/assets/License.gif";
 import { useScrollFadeIn } from "src/hooks/useScrollFadeIn";
+import { MouseDown } from "src/components";
 
 export const Intro = () => {
   const [hidden, setHidden] = useState({ status: false });
   const listenScrollEvent = () => {
-    window.scrollY > 10
+    window.scrollY > 400
       ? setHidden({ status: true })
       : setHidden({ status: false });
   };
@@ -41,7 +42,7 @@ export const Intro = () => {
       </S.TitleContainer>
       {!hidden.status ? (
         <S.ScrollContainer>
-          <S.ScrollHelp>👇</S.ScrollHelp>
+          <MouseDown />
         </S.ScrollContainer>
       ) : (
         <div></div>
