@@ -33,7 +33,10 @@ export const LinkContainer = styled.div`
   padding-right: 50vw;
 `;
 
-export const NavbarList = styled.div`
+export const NavbarList = styled.div<{
+  hidden: boolean;
+}>`
+  display: ${(props) => (props.hidden ? "block" : "none")};
   font-family: Pretendard;
   font-weight: 300;
 `;

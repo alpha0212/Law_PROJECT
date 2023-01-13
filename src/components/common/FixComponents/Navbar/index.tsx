@@ -16,11 +16,13 @@ export const Navbar: React.FC = () => {
   const [working2, setWorking2] = useState("false");
   const [working3, setWorking3] = useState("false");
   const [working4, setWorking4] = useState("false");
+  const [hiddenNav, SetHiddenNav] = useState(false);
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#ffffff") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("7rem");
     window.scrollY > 10 ? settitleColor("#2827a6") : settitleColor("#ffffff");
     window.scrollY > 10 ? setUnderColor("true") : setUnderColor("false");
+    window.scrollY > 10 ? SetHiddenNav(true) : SetHiddenNav(false);
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -85,7 +87,7 @@ export const Navbar: React.FC = () => {
           LAW
         </S.Logo>
         <S.LinkContainer>
-          <S.NavbarList>
+          <S.NavbarList hidden={hiddenNav}>
             <S.NavbarSelect
               onClick={select}
               underline={working.toString()}
@@ -95,14 +97,14 @@ export const Navbar: React.FC = () => {
             </S.NavbarSelect>
             <S.NavbarSelect
               onClick={select2}
-              underline={working2}
+              underline={working2.toString()}
               to="/content"
             >
               CONTENT
             </S.NavbarSelect>
             <S.NavbarSelect
               onClick={select3}
-              underline={working3}
+              underline={working3.toString()}
               to="/solution"
             >
               SOLUTION
