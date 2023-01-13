@@ -5,3 +5,5 @@ export * from "./SolutionThreeSectionDescription";
 export * from "./SolutionThreeCard";
 export * from "./HorizontalLine";
 export * from "./SolutionFourSection";
+export * from "./SolutionHowHealing";
+export * from "./SolutionCard";
