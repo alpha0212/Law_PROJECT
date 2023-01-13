@@ -4,7 +4,7 @@ export const HelpIntroTextContainer = styled.div`
   width: 76%;
   height: 100%;
   margin: auto;
-  margin-top: 22rem;
+  margin-top: 30rem;
 `;
 
 export const HelpIntroTitleContainer = styled.div`
