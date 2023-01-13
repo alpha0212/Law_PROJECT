@@ -32,11 +32,16 @@ export const ToGoButton = styled.button`
   border-radius: 2.2rem;
   background: #ffffff;
   margin-top: 3.1rem;
+  color: #919fe6;
+  :hover {
+    color: #ffffff;
+    background: #919fe6;
+  }
 `;
 
 export const ToGoButtonText = styled.div`
   font-size: 1.8rem;
   font-weight: medium;
-  color: #919fe6;
+
   text-align: center;
 `;
