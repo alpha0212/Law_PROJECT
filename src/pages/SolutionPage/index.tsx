@@ -37,11 +37,17 @@ export const SolutionPage: React.FC = () => {
         <S.SolutionThreeCardContainer>
           <S.SolutionThreeCardCenterPos>
             <SolutionThreeCard
-              Text="일반적인 모욕죄와 명예훼손에 해당하는 경우에는 상대방의 인적 사항을 확보하여 명예훼손을 한 사실을 바탕으로 고소장을 작성하여 경찰서에 접수를 한다."
+              OneLineText="일반적인 모욕죄와 명예훼손에 해당하는"
+              TwoLineText="경우에는 상대방의 인적 사항을 확보하여"
+              ThreeLineText="명예훼손을 한 사실을 바탕으로 고소장을"
+              FourLineText="작성하여 경찰서에 접수를 한다."
               ImgSrc="https://cdn.discordapp.com/attachments/1054718420651872266/1057287106688450700/203.png"
             />
             <SolutionThreeCard
-              Text="상대방을 특정하기 힘든 경우 수사기관에 해당 아이디를 사용한 사람의 인적 사항을 확보, 소환하여 조사하는 수사를 진행하고 처벌을 받을 수 있도록 해야 한다."
+              OneLineText="상대방을 특정하기 힘든 경우 수사기관에"
+              TwoLineText="해당 아이디를 사용한 사람의 인적 사항을 확보,"
+              ThreeLineText="소환하여 조사하는 수사를 진행하고 처벌을"
+              FourLineText="받을 수 있도록 해야 한다."
               ImgSrc="https://cdn.discordapp.com/attachments/1054718420651872266/1057287106088681582/72.png"
             />
           </S.SolutionThreeCardCenterPos>

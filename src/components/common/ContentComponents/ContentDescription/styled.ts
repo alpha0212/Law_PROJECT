@@ -5,7 +5,7 @@ export const ContentDescriptionSection = styled.div`
 `;
 
 export const ContentDescriptionTitleContainer = styled.div`
-  margin-top: 15rem;
+  margin-top: 15.7rem;
 `;
 export const ContentDescriptionTitle = styled.div`
   text-align: center;

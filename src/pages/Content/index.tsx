@@ -57,7 +57,7 @@ export const Content: React.FC = () => {
         style={{
           width: "100%",
           fontSize: "1.3rem",
-          marginTop: "5rem",
+          marginTop: "5.5rem",
           textAlign: "center",
         }}
       >

@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const SolutionTwoSectionContainer = styled.div`
   display: flex;
   margin: auto;
-  margin-top: 241px;
+  margin-top: 260px;
 `;
 
 export const SolutionTwoSectionTextContainer = styled.div``;

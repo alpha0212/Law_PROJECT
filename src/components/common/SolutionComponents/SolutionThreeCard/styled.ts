@@ -9,6 +9,8 @@ export const SolutionCardElement = styled.div`
   margin: auto;
   margin-right: 4rem;
   margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const SolutionCardElementIcon = styled.img`
@@ -19,9 +21,9 @@ export const SolutionCardTextContainer = styled.div``;
 
 export const SolutionCardElementText = styled.div`
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 600;
   letter-spacing: 0.12px;
   color: #231815;
   line-height: 20px;
-  margin-top: 26.9px;
 `;

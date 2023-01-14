@@ -7,7 +7,7 @@ export const AllSolutionComponent = styled.div`
 
 export const SolutionThreeSectionDescriptionContainer = styled.div`
   margin: auto;
-  margin-top: 27rem;
+  margin-top: 26.2rem;
 `;
 
 export const SolutionThreePointContainer = styled.div`

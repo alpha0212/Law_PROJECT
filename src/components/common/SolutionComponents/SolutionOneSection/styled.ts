@@ -19,4 +19,5 @@ export const SolutionOneSectionText = styled.div`
   letter-spacing: 0.15px;
   color: #231815;
   line-height: 25px;
+  font-weight: 600;
 `;

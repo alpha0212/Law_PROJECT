@@ -4,7 +4,7 @@ export const Content4LineContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 23rem;
 `;
 
 export const Content4LineTitleContainer = styled.div`

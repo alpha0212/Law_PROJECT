@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const Content2LineContainer = styled.div`
   display: flex;
+  margin-top: 2rem;
 `;
 
 export const Content2LineCenterContainer = styled.div`
