@@ -15,12 +15,13 @@ export const CircleContaner = styled.div`
 `;
 
 export const CircleImgBox = styled.div`
-  width: 19rem;
-  height: 19rem;
+  width: 18rem;
+  height: 18rem;
   background-color: #ffffff;
   border-radius: 20rem;
   margin-right: 5rem;
   margin-left: 5rem;
+  box-shadow: 0px 4px 6px #00000029;
 `;
 
 export const CircleImg = styled.img`
@@ -38,7 +39,7 @@ export const CircleUnderText = styled.div`
 `;
 
 export const CircleUnder = styled.div`
-  width: 14rem;
+  width: 13rem;
   height: 3.5rem;
   border: 0.23rem solid #fff;
   margin-left: 7.2rem;

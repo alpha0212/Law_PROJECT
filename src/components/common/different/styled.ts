@@ -66,11 +66,13 @@ export const s = styled.div`
 export const DescriptionContainer = styled.div`
   justify-content: center;
   letter-spacing: 0.15px;
+  margin-top: -2rem;
 `;
 
 export const Description = styled.div`
   text-align: center;
   font-size: 1.2rem;
+  font-weight: 600;
   line-height: 2.5rem;
 `;
 
