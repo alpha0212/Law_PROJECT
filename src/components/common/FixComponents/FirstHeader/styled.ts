@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 export const NavbarContainer = styled.div`
   position: fixed;
   width: 100%;
+  @media screen and (max-width: 500px) {
+    width: 30%;
+  }
   top: 0;
   left: 0;
   right: 0;
