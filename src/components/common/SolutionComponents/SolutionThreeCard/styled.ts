@@ -18,7 +18,7 @@ export const SolutionCardElementIcon = styled.img`
 `;
 
 export const SolutionCardTextContainer = styled.div`
-  margin-top: 2.69rem;
+  margin-top: 2.7rem;
 `;
 
 export const SolutionCardElementText = styled.div`
