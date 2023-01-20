@@ -16,7 +16,7 @@ export const back = styled.img`
 `;
 
 export const TitleContainer = styled.div`
-  width: 40vw;
+  width: 100%;
   position: absolute;
   top: 20vw;
   z-index: 3;
@@ -27,24 +27,35 @@ export const MainTitle = styled.div`
   font-family: Pretendard;
   font-weight: bold;
   color: #fff;
-  font-size: 2.5vw;
+  font-size: 4.8rem;
+  @media screen and (max-width: 1150px) {
+    font-size: 3rem;
+  }
 `;
 
 export const SubTitle = styled.div`
   font-family: Pretendard;
   font-weight: 500;
-  font-size: 1.5vw;
+  font-size: 2.9rem;
   margin-top: 2.5vh;
   margin-bottom: 2.5vh;
   color: rgba(255, 255, 255, 0.75);
+  @media screen and (max-width: 1150px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SubText = styled.div`
   font-family: Pretendard;
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 1.9rem;
   color: rgba(255, 255, 255, 0.5);
-  line-height: 1.5vw;
+  line-height: 2.9rem;
+
+  @media screen and (max-width: 1150px) {
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
 `;
 
 export const ScrollContainer = styled.div`
@@ -52,7 +63,7 @@ export const ScrollContainer = styled.div`
   width: 100%;
   text-align: center;
   z-index: 4;
-  top: 15 vw;
+  top: 15vw;
 `;
 
 export const ScrollHelp = styled.div`

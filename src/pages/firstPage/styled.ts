@@ -12,35 +12,60 @@ export const back2 = styled.img`
 `;
 
 export const TitleContainer2 = styled.div`
-  width: 40vw;
+  width: 100%;
   position: absolute;
-  top: 20vw;
+  top: 40rem;
   z-index: 3;
-  padding-left: 13%;
+  padding-left: 11.5%;
+  @media screen and (max-width: 500px) {
+    padding-left: 10%;
+    top: 25rem;
+  }
 `;
 
 export const MainTitle2 = styled.div`
   font-family: Pretendard;
   font-weight: bold;
   color: #fff;
-  font-size: 2.5vw;
+  font-size: 4.8rem;
+  @media screen and (max-width: 1000px) {
+    font-size: 3.5rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const SubTitle2 = styled.div`
   font-family: Pretendard;
   font-weight: 500;
-  font-size: 1.5vw;
+  font-size: 2.9rem;
   margin-top: 2.5vh;
   margin-bottom: 2.5vh;
   color: rgba(255, 255, 255, 0.75);
+  @media screen and (max-width: 1000px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const SubText2 = styled.div`
   font-family: Pretendard;
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 1.9rem;
   color: rgba(255, 255, 255, 0.5);
-  line-height: 1.5vw;
+  line-height: 2.9rem;
+  @media screen and (max-width: 1000px) {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const FirstPageContainer2 = styled.div`
@@ -51,7 +76,14 @@ export const FirstPageContainer2 = styled.div`
 export const StartContainer2 = styled.div`
   margin: auto;
   position: absolute;
-  top: 46vw;
+  top: 79rem;
+  @media screen and (min-width: 1550px) {
+    top: 50vw;
+  }
+  @media screen and (max-width: 500px) {
+    left: 27%;
+    top: 62rem;
+  }
   left: 43%;
 `;
 export const Start2 = styled(NavLink)`
