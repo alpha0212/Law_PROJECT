@@ -4,6 +4,7 @@ Disallow: /
 # Google Search
 User-agent: Googlebot
 Allow : / 
+Disallow: /forbidden/
 Disallow: /api*/
 Disallow: /oauth*/
 Disallow: /userprofile*/
@@ -11,8 +12,9 @@ Disallow: /userprofile*/
 # Naver Search
 User-agent: Yeti
 Allow: /
+Disallow: /forbidden/
 Disallow: /api*/
 Disallow: /oauth*/
 Disallow: /userprofile*/
 
-Sitemap: https://www.cineps.net/sitemap.xml
+Sitemap: https://www.xml-sitemaps.com/download/lawservice.vercel.app-74b43a4a9/sitemap.xml?view=1
