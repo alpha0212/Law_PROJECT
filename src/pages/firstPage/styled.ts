@@ -16,7 +16,7 @@ export const TitleContainer2 = styled.div`
   position: absolute;
   top: 40rem;
   z-index: 3;
-  padding-left: 11.5%;
+  padding-left: 10%;
   @media screen and (max-width: 500px) {
     padding-left: 10%;
     top: 25rem;
