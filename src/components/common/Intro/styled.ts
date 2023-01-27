@@ -31,6 +31,9 @@ export const MainTitle = styled.div`
   @media screen and (max-width: 1150px) {
     font-size: 3rem;
   }
+  @media screen and (min-width: 1150px) {
+    font-size: 4rem;
+  }
 `;
 
 export const SubTitle = styled.div`
