@@ -21,13 +21,17 @@ export const NavbarContainer = styled.div`
   background-color: #fff;
 `;
 
+export const NavbarWidth = styled.div`
+  width: 80%;
+  margin: auto;
+`;
+
 export const Logo = styled(Link)`
   font-family: Pretendard;
   font-weight: 600;
   font-size: 2rem;
   padding-bottom: 2.5rem;
   transform: translate(-57%, 0);
-  padding-left: 32.5%;
   text-decoration: none;
 `;
 

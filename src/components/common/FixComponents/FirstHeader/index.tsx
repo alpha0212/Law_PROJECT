@@ -16,9 +16,11 @@ export const FirstHeader: React.FC = () => {
           transition: "all 1s",
         }}
       >
-        <S.Logo to="/" style={{ color: titleColor }}>
-          LAW
-        </S.Logo>
+        <S.NavbarWidth>
+          <S.Logo to="/" style={{ color: titleColor }}>
+            LAW
+          </S.Logo>
+        </S.NavbarWidth>
       </S.NavbarContainer>
     </>
   );
