@@ -68,10 +68,10 @@ export const ChevronDown = styled.div`
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
-  :nth-child(odd) {
+  :nth-of-type(odd) {
     animation: pulse 500ms ease infinite alternate;
   }
-  :nth-child(even) {
+  :nth-of-type(even) {
     animation: pulse 500ms ease infinite alternate 250ms;
   }
   @keyframes pulse {
