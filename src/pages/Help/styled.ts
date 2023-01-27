@@ -8,7 +8,7 @@ export const OneSection = styled.div`
   background: #919fe6 0% 0% no-repeat padding-box;
   display: flex;
   flex-direction: column;
-  border-radius: 0 0 20rem 20rem;
+  border-radius: 0 0 15rem 15rem;
 `;
 
 export const TwoSection = styled.div`
