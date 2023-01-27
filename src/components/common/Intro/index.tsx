@@ -25,7 +25,7 @@ export const Intro = () => {
   };
   return (
     <>
-      <S.back src={License} />
+      <S.back src={License} alt="Background Image" />
       <S.TitleContainer>
         <S.MainTitle {...animatedItem[0]}>
           밝게 빛나는 화면 속 어두운 이야기
