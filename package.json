@@ -4,8 +4,6 @@
   "private": true,
   "scripts": {
     "start": "craco start",
-    "sitemap": "babel-node src/SitemapGenerator.ts",
-    "prebuild": "npm run sitemap",
     "prepare": "husky install",
     "build": "craco build",
     "test": "craco test",
