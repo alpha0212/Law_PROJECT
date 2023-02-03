@@ -12,7 +12,6 @@ export const back2 = styled.img`
 `;
 
 export const TitleContainer2 = styled.div`
-  width: 100%;
   position: absolute;
   top: 40rem;
   z-index: 3;
