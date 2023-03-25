@@ -12,12 +12,10 @@ export const Footer: React.FC = () => {
         <S.Info>About</S.Info>
       </S.InfoContainer>
       <S.InfoTextContainer>
-        <S.InfoText>+82 010-1234-5678</S.InfoText>
-        <S.InfoText>abcdefg@naver.com</S.InfoText>
-        <S.InfoText>
-          00마음치료센터 | 00법률상담센터 | 상담사 000님 외 8명
-        </S.InfoText>
-        <S.InfoText>국가법령정보센터 | 현장피해보고센터</S.InfoText>
+        <S.InfoText>+82 010-3914-5112</S.InfoText>
+        <S.InfoText>alpha_owo@naver.com</S.InfoText>
+        <S.InfoText></S.InfoText>
+        <S.InfoText></S.InfoText>
         <S.InfoText>
           서울특별시 서대문구 Copyright(c) P&G All rights reserved.
         </S.InfoText>

@@ -19,7 +19,7 @@ export const FirstPage = () => {
   const animatedItem = {
     0: useScrollFadeIn("up", 1, 0.2),
     1: useScrollFadeIn("up", 1, 0.7),
-    2: useScrollFadeIn("up", 1, 1.5),
+    2: useScrollFadeIn("up", 1.5, 1.5),
   };
   return (
     <S.FirstPageContainer2>
