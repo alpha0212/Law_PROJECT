@@ -14,8 +14,8 @@ export const Footer: React.FC = () => {
       <S.InfoTextContainer>
         <S.InfoText>+82 010-3914-5112</S.InfoText>
         <S.InfoText>alpha_owo@naver.com</S.InfoText>
-        <S.InfoText></S.InfoText>
-        <S.InfoText></S.InfoText>
+        <S.InfoText>{" "}</S.InfoText>
+        <S.InfoText>{" "}</S.InfoText>
         <S.InfoText>
           서울특별시 서대문구 Copyright(c) P&G All rights reserved.
         </S.InfoText>
